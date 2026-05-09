@@ -1,6 +1,5 @@
 /* ============================================================
    AUTH.CSS — Login & Signup Page
-   HireMeNow — Vanilla CSS
    ============================================================ */
 
 .auth-page {
@@ -42,10 +41,14 @@
 }
 
 .auth-brand::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(255, 255, 255, 0.05) 0%,
+    transparent 70%
+  );
 }
 
 .auth-brand-content {
@@ -103,7 +106,7 @@
   font-size: 10px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.40);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 @media (min-width: 1024px) {
@@ -147,7 +150,6 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   border-radius: var(--radius-full);
-  transition: var(--transition);
   color: var(--text-muted);
   font-family: var(--font-sans);
   font-weight: 500;
@@ -159,11 +161,6 @@
 .role-toggle-btn.active {
   background: var(--surface-3);
   color: var(--text);
-}
-
-.role-toggle-btn:hover:not(.active) {
-  color: var(--text-soft);
-  background: var(--surface-2);
 }
 
 /* ── Tabs ──────────────────────────────────────────────────── */
@@ -182,7 +179,6 @@
   text-transform: uppercase;
   font-weight: 500;
   position: relative;
-  transition: var(--transition);
   color: var(--text-muted);
   padding-bottom: 2px;
   cursor: pointer;
@@ -196,7 +192,7 @@
 }
 
 .auth-tab.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -14px;
   left: 0;
@@ -271,12 +267,7 @@
   font-weight: 500;
   font-family: var(--font-sans);
   cursor: pointer;
-  transition: var(--transition);
   margin-top: 6px;
-}
-
-.form-submit:hover {
-  background: var(--surface-3);
 }
 
 .form-error {
@@ -304,16 +295,10 @@
   font-weight: 500;
   font-family: var(--font-sans);
   cursor: pointer;
-  transition: var(--transition);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-}
-
-.oauth-btn:hover {
-  background: var(--surface-3);
-  color: var(--text);
 }
 
 /* ── Terms ─────────────────────────────────────────────────── */
@@ -328,92 +313,7 @@
   padding: 0 16px;
 }
 
-.auth-terms a:hover {
-  color: var(--text);
-  text-decoration: underline;
-}
-
 /* ── Form visibility ───────────────────────────────────────── */
 #login-form {
   display: block;
-}
-
-/* ── Onboarding Modal ──────────────────────────────────────── */
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(10px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  padding: 24px;
-}
-
-.modal-box {
-  background: var(--bg-2);
-  border: 1px solid var(--border-2);
-  border-radius: var(--radius-2xl);
-  padding: 48px 44px;
-  max-width: 460px;
-  width: 100%;
-  text-align: center;
-  box-shadow: var(--shadow);
-}
-
-[data-theme="light"] .modal-box {
-  background: #ffffff;
-}
-
-.modal-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: var(--radius-lg);
-  background: var(--surface-3);
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 24px;
-  color: var(--text-dim);
-}
-
-.modal-icon svg {
-  width: 24px;
-  height: 24px;
-}
-
-.modal-title {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 26px;
-  font-weight: 300;
-  margin-bottom: 14px;
-}
-
-.modal-desc {
-  font-size: 13px;
-  color: var(--text-dim);
-  line-height: 1.75;
-  margin-bottom: 32px;
-}
-
-.modal-desc strong {
-  color: var(--text);
-  font-weight: 500;
-}
-
-.modal-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* ── Navbar top-right theme toggle for auth page ───────────── */
-.auth-nav-toggle {
-  position: fixed;
-  top: 20px;
-  right: 24px;
-  z-index: 100;
 }

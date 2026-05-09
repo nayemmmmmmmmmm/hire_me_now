@@ -1,6 +1,5 @@
 /* ============================================================
    FREELANCER-DETAIL.CSS — Freelancer Profile Page Layout
-   HireMeNow — Pure Vanilla CSS
    ============================================================ */
 
 /* ── Navigation ───────────────────────────────────────────── */
@@ -37,17 +36,6 @@
   font-size: 13px;
   font-weight: 500;
   color: var(--text-dim);
-  transition: var(--transition);
-}
-
-.nav-link:hover {
-  color: var(--text);
-  background: var(--surface);
-}
-
-.nav-link.active {
-  color: var(--text);
-  background: var(--surface-3);
 }
 
 .nav-right {
@@ -76,20 +64,8 @@
   color: var(--text-dim);
   font-size: 14px;
   font-weight: 500;
-  transition: var(--transition);
 }
 
-.back-link:hover {
-  color: var(--text);
-}
-
-.back-link svg {
-  transition: var(--transition);
-}
-
-.back-link:hover svg {
-  transform: translateX(-2px);
-}
 
 /* ── Profile Header ───────────────────────────────────────── */
 .profile-header {
@@ -279,13 +255,6 @@
   font-size: 12px;
   font-weight: 500;
   color: var(--text-dim);
-  transition: var(--transition);
-}
-
-.skill-tag:hover {
-  color: var(--text);
-  background: var(--surface-2);
-  border-color: var(--border-2);
 }
 
 .skill-tag.expert {
@@ -307,12 +276,6 @@
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  transition: var(--transition);
-}
-
-.portfolio-item:hover {
-  border-color: var(--border-2);
-  transform: translateY(-2px);
 }
 
 .portfolio-image {
@@ -605,7 +568,6 @@
   box-shadow: var(--shadow);
   transform: translateY(100px);
   opacity: 0;
-  transition: var(--transition);
   z-index: 1000;
   max-width: 300px;
 }
